@@ -231,7 +231,7 @@
 
         <main>
             <!-- Пиксельный заголовок -->
-            <h1 class="logo-title">SERVER_01</h1>
+            <h1 class="logo-title">CRLX1Q</h1>
 
             <!-- Терминальный блок со статусом -->
             <div class="terminal-block">
@@ -260,7 +260,7 @@
 
             <!-- Текст внизу -->
             <div class="footer-desc">
-                Это мой сервер. Создаю масштабируемую архитектуру,<br>
+                Создаю масштабируемую архитектуру,<br>
                 нейросети и эстетичные интерфейсы.
             </div>
         </main>
@@ -354,16 +354,14 @@
         }
 
         // Локальный таймер, который тикает каждую секунду
-        // (чтобы не спамить бэкенд запросами каждую секунду, мы просто считаем разницу)
         setInterval(() => {
             if (serverStartTimestamp) {
-                // Разница между текущим временем и временем старта сервера
                 const currentUptimeMs = Date.now() - serverStartTimestamp;
                 renderUptime(currentUptimeMs);
             }
         }, 1000);
 
-        // Пингуем сервер раз в 10 секунд для проверки жив ли он
+        // Пингуем сервер раз в 10 секунд
         fetchServerStatus();
         setInterval(fetchServerStatus, 10000);
 
