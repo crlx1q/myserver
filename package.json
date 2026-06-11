@@ -1,0 +1,14 @@
+{
+  "name": "crlx1q-server",
+  "version": "1.0.0",
+  "description": "Terminal Server Status",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "",
+  "license": "ISC"
+}
